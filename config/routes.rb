@@ -1,8 +1,8 @@
 BookmarkNeXt::Application.routes.draw do
+
+  root 'users#new'
   resources :users
-
   resources :tags
-
   resources :bookmarks
 
   # The priority is based upon order of creation: first created -> highest priority.
