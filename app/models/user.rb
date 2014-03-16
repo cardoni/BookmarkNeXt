@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
 
+  has_many :bookmarks
+  has_many :tags, through: :bookmarks
+
   has_secure_password
 
   validates :username,
